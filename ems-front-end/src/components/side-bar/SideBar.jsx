@@ -1,11 +1,6 @@
-import {
-  
-  UsergroupAddOutlined,
-  UserAddOutlined,
-  
-} from '@ant-design/icons';
-import {  Menu,PageHeader, } from 'antd';
-import React, { useState } from 'react';
+import { UsergroupAddOutlined, UserAddOutlined } from "@ant-design/icons";
+import { Menu, PageHeader } from "antd";
+import React, { useState } from "react";
 function getItem(label, key, icon, children) {
   return {
     key,
@@ -15,31 +10,30 @@ function getItem(label, key, icon, children) {
   };
 }
 const items = [
-  getItem('Create Employee', '1', <UserAddOutlined />),
-  getItem('View Employee', '2', <UsergroupAddOutlined />),
-  
+  getItem("Create Employee", "1", <UserAddOutlined />),
+  getItem("View Employee", "2", <UsergroupAddOutlined />),
 ];
 const SideBar = () => {
-  const [mode, setMode] = useState('inline');
+  const [mode, setMode] = useState("inline");
   const changeMode = (value) => {
-    setMode(value ? 'vertical' : 'inline');
+    setMode(value ? "vertical" : "inline");
   };
- 
+
   return (
     <>
-    <PageHeader
-    className="site-page-header"
-    onBack={() => null}
-    title="EMS"
-    // subTitle="This is a subtitle"
-  />
-  
+      <PageHeader
+        className="site-page-header"
+        onBack={() => null}
+        title="EMS"
+        // subTitle="This is a subtitle"
+      />
+
       <Menu
         style={{
           width: 256,
         }}
-        defaultSelectedKeys={['1']}
-        defaultOpenKeys={['sub1']}
+        defaultSelectedKeys={["1"]}
+        defaultOpenKeys={["sub1"]}
         mode={mode}
         items={items}
       />

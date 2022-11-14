@@ -1,1 +1,2 @@
 -create basic folder structure and install mdb
+-create sidebar basically

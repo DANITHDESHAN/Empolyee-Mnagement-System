@@ -7,7 +7,7 @@ import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import Image from 'react-bootstrap/Image'
 
-export default function CreateEmployee() {
+export default function UpdateEmployee() {
   const [validated, setValidated] = useState(false);
 
   const handleSubmit = (event) => {
@@ -21,7 +21,8 @@ export default function CreateEmployee() {
   };
 
   return (
-    <Container>
+    <Container maxWidth="xl">
+        <header className="mb-3">Update Employee</header>
       <Form noValidate validated={validated} onSubmit={handleSubmit}>
         <Row className="mb-3">
           <Form.Group as={Col} md="6" controlId="validationCustom01">

@@ -1,3 +1,4 @@
 -create basic folder structure and install mdb
 -create sidebar basically
 -create employee form design and other necessary changes
+-update employee form design and other necessary changes
